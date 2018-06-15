@@ -8,7 +8,9 @@ class QaHomePage extends BasePage {
 
         // include modules...
         this.topStories = $('div.column.zn__column--idx-2');
-        this.storyKicker = $('div.ad.ad--epic.ad--all');
+        this.storyKicker = $('div.cd__content');
+        //this.storyKicker = $('div.ad.ad--epic.ad--all');
+        //this,storyKicker = $('div.cd__content');
         this.cnnLink = $('a#cnnLink');
 
     }
