@@ -10,7 +10,7 @@ https://devexpress.github.io/testcafe/documentation/recipes/using-page-model.htm
 
 
 
-Test Condition:
+Test Conditions:
 
 
  
