@@ -21,3 +21,5 @@ Test Conditions:
 2. Assert the kicker under the main story’s picture is filled out
 
 
+
+to execute the test: from inside the tests directory run =>  testcafe chrome qaTest.js

@@ -15,11 +15,11 @@ test('1. Assert that there are at least 5 top stories', async t => {
 });
 //////////////////////////////////////////////////////////////
 
-// test('2. Assert the kicker under the main story’s picture is filled out', async t => {
-//         await t
-//         //.expect(qaHomePage.article.exists);
-//     	.click(qaHomePage.storyKicker())
-// });
+test('2. Assert the kicker under the main story’s picture is filled out', async t => {
+        await t
+        //.expect(qaHomePage.article.exists);
+    	.click(qaHomePage.storyKicker())
+});
 
 
 
