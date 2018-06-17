@@ -7,18 +7,31 @@ fixture`CNN qaHomePage`
     .page`${cnnPage.url}`
 
 
-test('1. Assert that there are at least 5 top stories', async t => {
-    //await t.expect(5, Selector('div.column.zn__column--idx-2').count).eql(5);
-    await t
+  test('1. Assert that there are at least 5 top stories', async t => {
+   
+     	await t
+     	.click(qaHomePage.topStories());
+		//.expect(qaHomePage.StoriesList.exists).ok();
+    	//.expect(qaHomePage.StoriesList.innerText != null);
+	});
 
-    	.click(qaHomePage.topStories())
-});
-//////////////////////////////////////////////////////////////
 
-test('2. Assert the kicker under the main story’s picture is filled out', async t => {
+
+// //////////////////////////////////////////////////////////////
+test('2a. Assert the kicker under the main story’s picture is filled out', async t => {
         await t
-        //.expect(qaHomePage.article.exists);
-    	.click(qaHomePage.storyKicker())
+        
+    	//.click(qaHomePage.storyKicker());
+    	.expect(qaHomePage.storyKicker.innerText != null)
+    	//.expect(qaHomePage.storyKicker.innerText).ok()
+    	//.expect(qaHomePage.storyKicker.innerText).contains()
+    	// textContent   // .withText  // .innerText
+});
+
+test('2b. Assert the kicker under the main story’s picture is filled out', async t => {
+        await t
+        
+    	.click(qaHomePage.storyKicker());
 });
 
 
